@@ -6,7 +6,7 @@
 
 ![](https://media.proglib.io/wp-uploads/2017/04/57873948decae.png)
 
-Официальный сайт Git: [Текст ссылки] (https://git-scm.com/)
+Официальный сайт Git: (https://git-scm.com/)
 
 1. Настройка Git
    - git config --global user.name "Твоё Имя" - задаёт имя пользователя

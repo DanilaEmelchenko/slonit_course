@@ -19,3 +19,17 @@ logger.log("Первое сообщение");
 logger.log("Второе сообщение");
 
 console.log(logger.getLogs());
+
+// Напишите функцию `createRandomGenerator(min, max), которая возвращает новую функцию.
+// Каждое время, когда возвращенная функция вызывается, она должна генерировать случайное число в пределах от min до max.
+// Значения min и max должны сохраняться внутри замыкания, и быть недоступными извне.
+
+const createRandomGenerator = (min, max) => {
+  return function randomNumbers() {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  };
+};
+
+const getRandom = createRandomGenerator(1, 10);
+console.log(getRandom());
+console.log(getRandom());
